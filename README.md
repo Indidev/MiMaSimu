@@ -102,4 +102,4 @@ F3 - FF	|		| free
 * __JIND target__ initiates a jump to the address which is stored at the target address. (Jmp <target>)
 
 ## Other Stuff
-Give a look at the MIMA simulator (mimsim) and assambler (mimasm) by cbdev: https://github.com/cbdevnet/mima/
+Give a look at the MIMA simulator (mimasim) and assambler (mimasm) by cbdev: https://github.com/cbdevnet/mima/

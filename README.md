@@ -1,5 +1,5 @@
 # MiMaSimu
-A Simulator for the minimal machine (taught at the kit in Karlsruhe, Germany), with a graphical UI.
+A Simulator for the minimal machine (taught at the kit in Karlsruhe, Germany, see http://ti.ira.uka.de/), with a graphical UI.
 
 ## General instructions
 The internal memory can be edited by clicking the edit memory button.
@@ -100,3 +100,6 @@ F3 - FF	|		| free
 * Bits shifted out right within a __RAR__ command will be pushed in at the left.
 * The instruction __JMS target__ saves the address of the succeeding instruction (return address) to the address given by target and initiates a jump to target + 1.
 * __JIND target__ initiates a jump to the address which is stored at the target address. (Jmp <target>)
+
+## Other Stuff
+Give a look at the MIMA simulator (mimsim) and assambler (mimasm) by cbdev: https://github.com/cbdevnet/mima/

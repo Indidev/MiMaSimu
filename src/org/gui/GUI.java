@@ -466,7 +466,7 @@ public class GUI extends JFrame {
 		});
 		buttons.put("step", tmp);
 
-		tmp = new JButton("edit Memory");
+		tmp = new JButton("edit memory");
 		tmp.setLocation(35, 190);
 		tmp.addActionListener(new ActionListener() {
 
@@ -477,7 +477,7 @@ public class GUI extends JFrame {
 		});
 		buttons.put("edtMem", tmp);
 
-		tmp = new JButton("load Memory");
+		tmp = new JButton("load memory");
 		tmp.setLocation(35, 230);
 		tmp.addActionListener(new ActionListener() {
 
@@ -522,7 +522,7 @@ public class GUI extends JFrame {
 
 		buttons.put("loadMem", tmp);
 
-		tmp = new JButton("save Memory");
+		tmp = new JButton("save memory");
 		tmp.setLocation(35, 270);
 		tmp.addActionListener(new ActionListener() {
 
@@ -530,7 +530,7 @@ public class GUI extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				JFileChooser fileExplorer = new JFileChooser();
 				fileExplorer.setFileSelectionMode(JFileChooser.FILES_ONLY);
-				fileExplorer.setApproveButtonText("speichern");
+				fileExplorer.setApproveButtonText("save");
 
 				// add Filter for only accepting .mem and .mima files
 				FileFilter filter = new FileFilter() {
@@ -568,7 +568,7 @@ public class GUI extends JFrame {
 
 		buttons.put("saveMem", tmp);
 
-		tmp = new JButton("save Result");
+		tmp = new JButton("save result");
 		tmp.setLocation(35, 310);
 		tmp.addActionListener(new ActionListener() {
 
@@ -576,7 +576,7 @@ public class GUI extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				JFileChooser fileExplorer = new JFileChooser();
 				fileExplorer.setFileSelectionMode(JFileChooser.FILES_ONLY);
-				fileExplorer.setApproveButtonText("speichern");
+				fileExplorer.setApproveButtonText("save");
 
 				// add Filter for only accepting .mem files
 				FileFilter filter = new FileFilter() {

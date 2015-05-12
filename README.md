@@ -1,6 +1,26 @@
 # MiMaSimu
 A Simulator for the minimal machine (taught at the kit in Karlsruhe, Germany, see http://ti.ira.uka.de/), with a graphical UI.
 
+## Compile instructions
+
+### Compiling
+- use following command to compile alle files to a bin directory:
+```
+mkdir bin
+javac -d bin @files
+```
+- run by using:
+```
+java -classpath "bin" org.Mima
+```
+
+### Creating an executable JAR-File
+
+- change to the bin folder
+- use ```jar cvfe MiMaSimu.jar org.Mima org``` to create a jar file
+- execute by using:
+``` java -jar MiMaSimu.jar```
+
 ## General instructions
 The internal memory can be edited by clicking the edit memory button.
 Memory images with the extension ".mima" or ".mem" can be load by use of the "load memory" button or by passing the file as command line argument.

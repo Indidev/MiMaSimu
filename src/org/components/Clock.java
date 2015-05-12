@@ -22,20 +22,12 @@ public class Clock implements Runnable {
 			e.printStackTrace();
 		}
 		while (!stopped) {
+			sleep(100);
 			if (!paused) {
 				sw.clock();
-				try {
-					Thread.sleep(timeout / 2);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
+				sleep(timeout / 2);
 				sw.clockOff();
-
-				try {
-					Thread.sleep(timeout / 2);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
+				sleep(timeout / 2);
 			}
 		}
 	}
@@ -54,5 +46,13 @@ public class Clock implements Runnable {
 
 	public void setTimeout(int timeout) {
 		this.timeout = timeout + 10;
+	}
+
+	private void sleep(int millis) {
+		try {
+			Thread.sleep(millis);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 }

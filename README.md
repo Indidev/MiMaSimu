@@ -7,11 +7,11 @@ A Simulator for the minimal machine (taught at the kit in Karlsruhe, Germany, se
 - use following command to compile alle files to a bin directory:
 ```
 mkdir bin
-javac -d bin @files
+javac -d bin -sourcepath src src/org/Mima.java
 ```
 - run by using:
 ```
-java -classpath "bin" org.Mima
+java -classpath bin org.Mima
 ```
 
 ### Creating an executable JAR-File

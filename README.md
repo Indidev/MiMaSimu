@@ -1,6 +1,8 @@
 # MiMaSimu
 A Simulator for the minimal machine (taught at the kit in Karlsruhe, Germany, see http://ti.ira.uka.de/), with a graphical UI.
 
+![MiMaSimu](mima.jpg?raw=true)
+
 ## Compile instructions
 
 ### Compiling

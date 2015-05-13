@@ -22,13 +22,13 @@ public class Clock implements Runnable {
 			e.printStackTrace();
 		}
 		while (!stopped) {
-			sleep(100);
 			if (!paused) {
 				sw.clock();
 				sleep(timeout / 2);
 				sw.clockOff();
 				sleep(timeout / 2);
-			}
+			} else
+				sleep(100);
 		}
 	}
 

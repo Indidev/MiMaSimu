@@ -79,7 +79,7 @@ The memory address 0x04242 is mapped to the consoles output.
 c_2c_1c_0	| Operation
 :--------------:|:---------
 000		| do nothing (Z --> Z)
-001		| X + > --> Z
+001		| X + Y --> Z
 010		| rotate X to the right --> Z
 011		| X AND Y --> Z
 100		| X OR Y --> Z
@@ -99,7 +99,7 @@ c_2c_1c_0	| Operation
 OpCode 	| mnemonik	| Description
 :------:|:--------------|:-----------
 0	| LDC c		| c --> Acc
-1	| LDV a		| <a> --> Acc
+1	| LDV a		| < a > --> Acc
 2	| STV a		| Acc --> <a>
 3	| ADD a		| Acc + <a> --> Acc
 4	| AND a		| Acc AND <a> --> Acc

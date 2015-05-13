@@ -100,16 +100,16 @@ OpCode 	| mnemonik	| Description
 :------:|:--------------|:-----------
 0	| LDC c		| c --> Acc
 1	| LDV a		| < a > --> Acc
-2	| STV a		| Acc --> <a>
-3	| ADD a		| Acc + <a> --> Acc
-4	| AND a		| Acc AND <a> --> Acc
-5	| OR a		| Acc OR <a> --> Acc
-6	| XOR a		| Acc XOR <a> --> Acc
-7	| EQL a		| if(Acc == <a>){-1 --> Acc} else {0 --> Acc}
+2	| STV a		| Acc --> < a >
+3	| ADD a		| Acc + < a > --> Acc
+4	| AND a		| Acc AND < a > --> Acc
+5	| OR a		| Acc OR < a > --> Acc
+6	| XOR a		| Acc XOR < a > --> Acc
+7	| EQL a		| if(Acc == < a >){-1 --> Acc} else {0 --> Acc}
 8	| JMP a		| Jump to address a
 9	| JMN a		| Jump to address a if acc < 0
-A	| LDIV a	| <<a>> --> Acc
-B	| STIV a	| Acc --> <<a>>
+A	| LDIV a	| << a >> --> Acc
+B	| STIV a	| Acc --> << a >>
 C	| JMS a		| jump subroutine (see below)
 D	| JIND a	| jump indirect (see below)
 E	|		| free

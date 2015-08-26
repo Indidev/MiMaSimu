@@ -10,11 +10,11 @@ A Simulator for the minimal machine (taught at the kit in Karlsruhe, Germany, se
    * [Creating a JAR-File](#creating-an-executable-jar-file)
  * [General instructions](#general-instructions)
  * [Architecture of the MIMA](#architecture-of-the-mima-minimal-machine)
-   *[Registers](#registers)
-   *[Alu operations](#alu-operations)
-   *[Instruction set](#instruction set)
-     *[Instruction format](#instruction-format)
-     *[Op-Codes](#op-codes)
+   * [Registers](#registers)
+   * [Alu operations](#alu-operations)
+   * [Instruction set](#instruction set)
+     * [Instruction format](#instruction-format)
+     * [Op-Codes](#op-codes)
  * [Other stuff](#other-stuff)
 
 ## Compile instructions

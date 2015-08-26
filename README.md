@@ -3,9 +3,23 @@ A Simulator for the minimal machine (taught at the kit in Karlsruhe, Germany, se
 
 ![MiMaSimu](mima.png?raw=true)
 
+## Overview
+
+ * [Compile instructions](#compile-instructions)
+   * [Compilation](#compilation)
+   * [Creating a JAR-File](#creating-an-executable-jar-file)
+ * [General instructions](#general-instructions)
+ * [Architecture of the MIMA](#architecture-of-the-mima-minimal-machine)
+   *[Registers](#registers)
+   *[Alu operations](#alu-operations)
+   *[Instruction set](#instruction set)
+     *[Instruction format](#instruction-format)
+     *[Op-Codes](#op-codes)
+ * [Other stuff](#other-stuff)
+
 ## Compile instructions
 
-### Compiling
+### Compilation
 - use following command to compile alle files to a bin directory:
 ```
 mkdir bin
@@ -74,7 +88,7 @@ The memory address 0x04242 is mapped to the consoles output.
 * SAR: memory address register
 * SDR: memory data register
 
-### ALU Operations
+### ALU operations
 
 c_2c_1c_0	| Operation
 :--------------:|:---------
@@ -123,5 +137,5 @@ F3 - FF	|		| free
 * The instruction __JMS target__ saves the address of the succeeding instruction (return address) to the address given by target and initiates a jump to target + 1.
 * __JIND target__ initiates a jump to the address which is stored at the target address. (Jmp <target>)
 
-## Other Stuff
+## Other stuff
 Give a look at the MIMA simulator (mimasim) and assambler (mimasm) by cbdev: https://github.com/cbdevnet/mima/
